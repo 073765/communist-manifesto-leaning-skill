@@ -4,6 +4,8 @@
 
 它不是把书压缩成摘要，而是把文本拆成可检查的论证：每一章有论证路线、核心概念、精读片段、易误读处、自测题与参考答案；另附全书论证地图、术语表、分析模式、速查表、14 天学习计划与历史时间线。
 
+第二层是**课程深化**：把复旦大学张双利教授 70 讲《〈共产党宣言〉导读》的哲学前史与文本解读，整理成 8 份可检索的讲稿索引——黑格尔法哲学批判、论犹太人问题、1844 年手稿、德意志意识形态，以及四章正文与 1848 年之后的反思。课程内容是提炼与转述，不收录逐字转录稿。
+
 ## 30 秒体验
 
 1. 准备一个支持 Agent Skills 的宿主：OpenCode、Claude Code、Codex、Cursor 等。
@@ -25,8 +27,9 @@ git clone https://github.com/073765/communist-manifesto-leaning-skill.git ~/.age
 
 - 第一次系统阅读《共产党宣言》，需要有人按论证顺序带着读
 - 读过片段，但说不清全书论证链条
+- 想补马克思 1843–1848 年的思想史背景，弄清「阶级」「私有财产」「国家」这些概念从哪来
 - 想用苏格拉底式提问、自测和写作任务来检验理解
-- 想区分「原文说了什么」「恩格斯注/编者注说了什么」「后人怎么解释」
+- 想区分「原文说了什么」「恩格斯注/编者注说了什么」「课程怎么解释」「后人怎么解释」
 
 ## 内容
 
@@ -40,10 +43,19 @@ git clone https://github.com/073765/communist-manifesto-leaning-skill.git ~/.age
 | `chapters/ch04-opposition-parties.md` | 联合与独立、德国问题、全世界无产者联合起来 |
 | `argument-map.md` | 全书论证地图、五条推理链、五个可检验前提 |
 | `glossary.md` | 术语表，含「慎用：常见误传术语」 |
-| `patterns.md` | 九种分析模式与论证手法 |
+| `patterns.md` | 十二种分析模式与论证手法（含三种课程方法） |
 | `cheatsheet.md` | 核心命题、十项措施、五类社会主义、误读对照 |
 | `study-guide.md` | 14 天精读计划、自测题库、结课短文与评分标准 |
 | `timeline.md` | 1847–1920 文本与历史双线时间线 |
+| `lectures/00-course-map.md` | 70 讲课程地图、六个总判断、讲次总索引 |
+| `lectures/01-background-and-early-marx.md` | 导论、三重写作背景、核心内容、1848 后历史（P01–P07） |
+| `lectures/02-hegel-and-state-critique.md` | 黑格尔法哲学、法哲学批判、论犹太人问题、无产阶级革命（P08–P21） |
+| `lectures/03-political-economy-and-alienation.md` | 国民经济学批判、私有财产、异化劳动（P22–P30） |
+| `lectures/04-german-ideology.md` | 德意志意识形态、重解所有制、阶级统治、内部矛盾（P31–P34） |
+| `lectures/05-ch1-class-and-bourgeois-society.md` | 第一章：阶级、资产阶级社会、危机、无产者与革命（P35–P49） |
+| `lectures/06-ch2-communism-principles.md` | 第二章：共产主义原则、消灭私有财产、自由、家庭与国家（P50–P56） |
+| `lectures/07-ch3-ch4-socialism-and-politics.md` | 第三、四章：各派社会主义批判、介入现实运动（P57–P65） |
+| `lectures/08-after-1848-and-weber.md` | 1848 后反思、资本主义转型、革命道路、韦伯（P66–P72） |
 
 ## 安装
 
@@ -79,11 +91,13 @@ npx skills add 073765/communist-manifesto-leaning-skill
 
 - 「用《共产党宣言》技能，按 14 天计划开始第 1 天」
 - 「讲讲第一章的论证，标出原文页码和最容易读错的地方」
+- 「第一章背后的黑格尔前史是什么？」
 - 「考考我第一章，别直接给答案」
 - 「第 37 页‘魔法师失控’那段什么意思」
 - 「马克思说的‘消灭私有制’到底消灭什么？」
+- 「课程和原文哪里不一样？」
 
-技能会按 `SKILL.md` 的教学协议工作：先定位章节，再讲解；区分原文、注释与后人解释；每次回答留一个检查问题。
+技能会按 `SKILL.md` 的教学协议工作：先定位章节，再讲解；区分原文、注释、课程解读与后人解释；每次回答留一个检查问题。
 
 ## 关于页码与版本
 
@@ -95,12 +109,13 @@ npx skills add 073765/communist-manifesto-leaning-skill
 
 - 《共产党宣言》原文（1848）已进入公有领域；本仓库所参考中文译本的著作权归原译者/出版方所有。
 - 本仓库不收录原文全文；章节中的短引文仅用于评论、解释与学习，引用时标注页码。
+- 课程深化层整理自复旦大学张双利教授《〈共产党宣言〉导读》公开课（B 站 BV13g411r75p）。本仓库只收提炼、索引与短引，**不收录逐字转录稿**；课程与转录内容的权利归主讲人及课程方，转录稿请自行本地保存。
 - 本技能是学习辅助材料，不是学术定本，也不构成对任何政治制度的倡导或背书。
 - 书中解释为编写者的阅读整理，欢迎批评指正。
 
 ## 生成方式
 
-结构参考 [book-to-skill](https://github.com/virgiliojr94/book-to-skill)：把书拆成 `SKILL.md`、章节文件、术语表、模式、速查表与索引。本技能针对政治文本做了调整：`patterns.md` 改为分析模式与论证手法，并增加 `study-guide.md` 与 `timeline.md`。
+结构参考 [book-to-skill](https://github.com/virgiliojr94/book-to-skill)：把书拆成 `SKILL.md`、章节文件、术语表、模式、速查表与索引。本技能针对政治文本做了调整：`patterns.md` 改为分析模式与论证手法，并增加 `study-guide.md` 与 `timeline.md`。v2 增加课程深化层 `lectures/`：把张双利 70 讲导读整理成与章节互链的 8 份讲稿索引。
 
 ---
 
