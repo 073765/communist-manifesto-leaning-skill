@@ -1,0 +1,6 @@
+_source/
+full_text.txt
+*.pdf
+quote_report.txt
+.DS_Store
+Thumbs.db
