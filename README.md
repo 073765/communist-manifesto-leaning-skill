@@ -4,6 +4,23 @@
 
 它不是把书压缩成摘要，而是把文本拆成可检查的论证：每一章有论证路线、核心概念、精读片段、易误读处、自测题与参考答案；另附全书论证地图、术语表、分析模式、速查表、14 天学习计划与历史时间线。
 
+## 30 秒体验
+
+1. 准备一个支持 Agent Skills 的宿主：OpenCode、Claude Code、Codex、Cursor 等。
+2. 安装（目录名用 `communist-manifesto`，与 `SKILL.md` 里的 `name` 一致）：
+
+```bash
+git clone https://github.com/073765/communist-manifesto-leaning-skill.git ~/.agents/skills/communist-manifesto
+```
+
+项目级安装（OpenCode）：克隆到项目的 `.opencode/skills/communist-manifesto`。
+
+3. 新开一个会话，直接说：
+
+> 用《共产党宣言》技能，考我第一章，别先给答案。
+
+技能会先确认你的进度，再出题、等回答、点评，不会一次把答案倒给你。
+
 ## 适合谁
 
 - 第一次系统阅读《共产党宣言》，需要有人按论证顺序带着读
@@ -30,29 +47,31 @@
 
 ## 安装
 
-### 方式一：复制到 Agent Skills 目录
+### 方式一：克隆到 Agent Skills 目录
 
-个人级（跨 Agent，OpenCode / Copilot CLI / Codex 等）：
+个人级（跨 Agent，OpenCode / Claude Code / Codex 等）：
 
 ```bash
-git clone <repo-url> ~/.agents/skills/communist-manifesto-study-skill
+git clone https://github.com/073765/communist-manifesto-leaning-skill.git ~/.agents/skills/communist-manifesto
 ```
 
 项目级（OpenCode）：
 
 ```bash
-git clone <repo-url> .opencode/skills/communist-manifesto-study-skill
+git clone https://github.com/073765/communist-manifesto-leaning-skill.git .opencode/skills/communist-manifesto
 ```
 
-Windows 对应路径为 `%USERPROFILE%\.agents\skills\communist-manifesto-study-skill`。
+Windows 对应路径为 `%USERPROFILE%\.agents\skills\communist-manifesto`。
+
+目录名要用 `communist-manifesto`，与 `SKILL.md` 的 `name` 字段保持一致；仓库名不同不影响使用。
 
 ### 方式二：skills CLI
 
-如果使用支持 Agent Skills 的宿主：
-
 ```bash
-npx skills add <owner>/<repo>
+npx skills add 073765/communist-manifesto-leaning-skill
 ```
+
+加 `-g` 安装到全局，加 `-a opencode`（或 `-a claude-code`）直接指定宿主。
 
 ## 使用
 
