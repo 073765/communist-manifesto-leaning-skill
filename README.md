@@ -71,6 +71,7 @@ git clone https://github.com/073765/communist-manifesto-leaning-skill.git ~/.age
 | `lectures/06-ch2-communism-principles.md` | 第二章：共产主义原则、消灭私有财产、自由、家庭与国家（P50–P56） |
 | `lectures/07-ch3-ch4-socialism-and-politics.md` | 第三、四章：各派社会主义批判、介入现实运动（P57–P65） |
 | `lectures/08-after-1848-and-weber.md` | 1848 后反思、资本主义转型、革命道路、韦伯（P66–P72） |
+| `LICENSE` | CC BY-NC-SA 4.0 许可声明（文字内容） |
 
 ## 安装
 
@@ -129,6 +130,12 @@ npx skills add 073765/communist-manifesto-leaning-skill
 - 课程深化层整理自复旦大学张双利教授《〈共产党宣言〉导读》公开课（B 站 BV13g411r75p）。本仓库只收提炼、索引与短引，**不收录逐字转录稿**；课程与转录内容的权利归主讲人及课程方，转录稿请自行本地保存。
 - 本技能是学习辅助材料，不是学术定本，也不构成对任何政治制度的倡导或背书。
 - 书中解释为编写者的阅读整理，欢迎批评指正。
+
+## 许可
+
+- 本仓库的文字内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)：署名、非商业性使用、相同方式共享。许可声明与完整条款链接见仓库根目录 `LICENSE`。
+- 引用的《共产党宣言》中译短句，权利归原译者/出版方，不在本许可范围内；课程内容的权利归主讲人及课程方。
+- 欢迎在非商业范围内转载、改编，请保留出处并以同一许可发布。仓库目前只有 Markdown，没有可执行脚本；以后若加入脚本，脚本部分单独采用 MIT。
 
 ## 生成方式
 
